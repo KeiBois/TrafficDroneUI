@@ -102,3 +102,6 @@ ENV/
 
 # sublime
 *.sublime*
+
+# QT
+views/*.py

@@ -1,6 +1,6 @@
 from PyQt5 import uic, QtWidgets
 import sys
-from window1 import Ui_Dialog as WindowTemplate
+from views.window1 import Ui_Dialog as WindowTemplate
 
 class Ui(QtWidgets.QDialog):
 	def __init__(self):
