@@ -2,19 +2,16 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QIcon
-from views.MapView import Ui_MainWindow as MapView
 from views.Dashboard import Ui_MainWindow as Dashboard
-from MapViewController import MapViewController
 from DialogTemplate import DialogTemplate
 
  
 class DashBoardController():
  
-    def __init__(self):
-        self.views = dict()
-        self.views['mapViewController'] = MapViewController()
+    def __init__(self, viewManager):
         self.window = Dashboard()
         self.mainWindow = QMainWindow()
+        self.viewManager = viewManager
         self.window.setupUi(self.mainWindow)
         self.addEvents()
 
@@ -27,14 +24,11 @@ class DashBoardController():
     	self.mainWindow.show()
     	
     def openDroneScheduler(self):
-        self.openView("mapViewController")
-
-    def openAnalyzeTraffict(self):
         pass
+
+    def openAnalyzeTraffic(self):
+        self.mainWindow.close()
+        self.viewManager.openView("mapViewController")
 
     def openTrafficAlerts(self):
         pass
-
-    def openView(self, viewName):
-        self.mainWindow.close()
-        self.views[viewName].showView()
