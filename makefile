@@ -1,6 +1,6 @@
 PYUIC5=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/Scripts/pyuic5.exe
 PYTHON=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/python.exe
-UIFILES=window1
+UIFILES=window1 MapView
 DIR=app/views/
 
 all: $(UIFILES)

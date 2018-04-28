@@ -1,27 +1,27 @@
-from PyQt5 import uic, QtWidgets
 import sys
-from views.window1 import Ui_Dialog as WindowTemplate
+from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QIcon
+from views.MapView import Ui_MainWindow as MapView
+from DialogTemplate import DialogTemplate
 
-class Ui(QtWidgets.QDialog):
-	def __init__(self):
-		super(Ui, self).__init__()
-		self.window = WindowTemplate()
-		self.window.setupUi(self)
-		self.addEvents()
-		self.show()
+ 
+class App(QMainWindow):
+ 
+    def __init__(self):
+        super().__init__()
+        self.window = QMainWindow()
 
-	def addEvents(self):
-		self.window.helloButton.clicked.connect(lambda: self.sayHello())
-		self.window.exitButton.clicked.connect(lambda: self.plzExit())
+        
+ 
+app = QApplication(sys.argv)
 
-	def sayHello(self):
-		self.window.myLabel.setText("HELLO!!!")
+window = App()
+mapView = MapView()
+mapView.setupUi(window)
+window.show()
 
-	def plzExit(self):
-		sys.exit()
+dialog = DialogTemplate()
 
-if __name__ == '__main__':
-	app = QtWidgets.QApplication(sys.argv)
-	window = Ui()
 
-	sys.exit(app.exec_())
+sys.exit(app.exec_())
