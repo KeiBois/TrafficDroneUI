@@ -18,16 +18,21 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>190</y>
+      <y>300</y>
       <width>1391</width>
       <height>1161</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: solid;
+border-width: 2px;
+</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>map.png</pixmap>
+     <pixmap>../../views/map.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="menuButton">
