@@ -5,14 +5,13 @@ from PyQt5.QtGui import QIcon
 from views.MapView import Ui_MainWindow as MapView
 from views.Dashboard import Ui_MainWindow as Dashboard
 from DialogTemplate import DialogTemplate
+from DashBoardController import DashBoardController
 
  
 class App(QMainWindow):
  
     def __init__(self):
         super().__init__()
-        self.window = QMainWindow()
-
         
  
 app = QApplication(sys.argv)
@@ -20,6 +19,7 @@ app = QApplication(sys.argv)
 window = App()
 dashboard = Dashboard()
 dashboard.setupUi(window)
+dashboardController = DashBoardController(dashboard)
 window.show()
 # mapView = MapView()
 # mapView.setupUi(window)
