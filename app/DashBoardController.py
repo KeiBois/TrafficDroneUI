@@ -1,9 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtGui import QIcon
 from views.Dashboard import Ui_MainWindow as Dashboard
-from DialogTemplate import DialogTemplate
 
  
 class DashBoardController():

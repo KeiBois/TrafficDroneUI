@@ -1,10 +1,7 @@
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtGui import QIcon
+from PyQt5 import QtGui
+from PyQt5.QtWidgets import QMainWindow
 from views.MapView import Ui_MainWindow as MapView
-from DialogTemplate import DialogTemplate
 
 
 class MapViewController():
