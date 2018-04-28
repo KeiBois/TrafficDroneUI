@@ -11,5 +11,6 @@ class App():
       viewManager = ViewManager()
       viewManager.openView("dashBoardController")
       sys.exit(app.exec_())
+      
         
 app = App()
