@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from views.Dashboard import Ui_MainWindow as Dashboard
+from controllers.views.Dashboard import Ui_MainWindow as Dashboard
 
  
 class DashBoardController():

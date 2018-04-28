@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from ViewManager import ViewManager
+from controllers.ViewManager import ViewManager
 
 
  

@@ -1,6 +1,6 @@
 import sys
-from MapViewController import MapViewController
-from DashBoardController import DashBoardController
+from controllers.MapViewController import MapViewController
+from controllers.DashBoardController import DashBoardController
 
  
 class ViewManager():
