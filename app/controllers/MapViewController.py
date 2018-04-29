@@ -14,7 +14,7 @@ class MapViewController():
 		self.window.mapLabel.setPixmap(QtGui.QPixmap("app/controllers/views/north_boulder.png"))
 		self.window.trafficStatusLabel.setStyleSheet("color: green;")
 		self.mapImages = dict()
-		self.mapImages["North Boulder"] = "north_boulder.png"
+		self.mapImages["North Boulder"] = "north_boulder.png.png"
 		self.mapImages["Central Boulder"] = "central_boulder.png"
 		self.mapImages["University Hill"] = "university_hill.png"
 		self.mapImages["Table Mesa"] = "north_boulder.png"
@@ -24,6 +24,8 @@ class MapViewController():
 	def addEvents(self):
 		self.window.menuButton.clicked.connect(lambda: self.openDashboard())
 		self.window.districtComboBox.activated.connect(lambda: self.comboBoxChanged())
+		self.window.exitButton.clicked.connect(lambda: self.exit())
+
 
 	def comboBoxChanged(self):
 		currentLocation = self.window.districtComboBox.currentText()
@@ -36,3 +38,6 @@ class MapViewController():
 	def openDashboard(self):
 		self.mainWindow.close()
 		self.viewManager.openView("dashBoardController")
+
+	def exit(self):
+		sys.exit()

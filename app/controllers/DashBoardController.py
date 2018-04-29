@@ -35,4 +35,5 @@ class DashBoardController():
         sys.exit()
 
     def openTrafficAlerts(self):
-        pass
+        self.mainWindow.close()
+        self.viewManager.openView("trafficAlertsController")
