@@ -104,4 +104,4 @@ ENV/
 *.sublime*
 
 # QT
-app/controllers/views/*.py
+# app/controllers/views/*.py
