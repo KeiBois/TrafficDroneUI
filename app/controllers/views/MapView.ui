@@ -194,7 +194,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Traffic Light 1:</string>
+      <string>Light 1:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -213,65 +213,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Traffic Light 2:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>600</y>
-       <width>781</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Roboto Light</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Proposed Solution: </string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="menuButton_2">
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>730</y>
-       <width>271</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Make Changes</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="menuButton_3">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>730</y>
-       <width>271</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Visualize Solution</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="menuButton_4">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>730</y>
-       <width>271</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Edit Solution</string>
+      <string>Light 2:</string>
      </property>
     </widget>
     <widget class="QLabel" name="trafficStatusLabel">
