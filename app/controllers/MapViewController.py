@@ -14,7 +14,7 @@ class MapViewController():
 		self.window.mapLabel.setPixmap(QtGui.QPixmap("app/controllers/views/north_boulder.png"))
 		self.window.trafficStatusLabel.setStyleSheet("color: green;")
 		self.mapImages = dict()
-		self.mapImages["North Boulder"] = "north_boulder.png.png"
+		self.mapImages["North Boulder"] = "north_boulder.png"
 		self.mapImages["Central Boulder"] = "central_boulder.png"
 		self.mapImages["University Hill"] = "university_hill.png"
 		self.mapImages["Table Mesa"] = "north_boulder.png"
