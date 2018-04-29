@@ -103,6 +103,10 @@ p, li { white-space: pre-wrap; }
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+     </property>
      <property name="text">
       <string>Drone Flight Scheduler</string>
      </property>
@@ -149,6 +153,10 @@ p, li { white-space: pre-wrap; }
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+     </property>
      <property name="text">
       <string>Analyze Traffic</string>
      </property>
@@ -169,7 +177,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Lorem Ipsum&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Visualize various logs and alerts taken from various drones in time and recorded, this can be used to send alerts to users.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -189,6 +197,10 @@ p, li { white-space: pre-wrap; }
        <family>Roboto Light</family>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
      </property>
      <property name="text">
       <string>Traffic Alerts</string>

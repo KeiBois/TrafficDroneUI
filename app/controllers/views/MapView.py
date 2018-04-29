@@ -24,6 +24,11 @@ class Ui_MainWindow(object):
         self.mapLabel.setObjectName("mapLabel")
         self.menuButton = QtWidgets.QPushButton(self.centralwidget)
         self.menuButton.setGeometry(QtCore.QRect(60, 40, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.menuButton.setFont(font)
+        self.menuButton.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.menuButton.setObjectName("menuButton")
         self.districtComboBox = QtWidgets.QComboBox(self.centralwidget)
         self.districtComboBox.setGeometry(QtCore.QRect(340, 360, 601, 61))
@@ -118,6 +123,15 @@ class Ui_MainWindow(object):
         font.setPointSize(12)
         self.trafficStatusLabel.setFont(font)
         self.trafficStatusLabel.setObjectName("trafficStatusLabel")
+        self.exitButton = QtWidgets.QPushButton(self.centralwidget)
+        self.exitButton.setGeometry(QtCore.QRect(2120, 1610, 321, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        font.setPointSize(12)
+        self.exitButton.setFont(font)
+        self.exitButton.setStyleSheet("background-color:#e57373 ;\n"
+"color: white;")
+        self.exitButton.setObjectName("exitButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 2500, 43))
@@ -153,4 +167,5 @@ class Ui_MainWindow(object):
         self.menuButton_3.setText(_translate("MainWindow", "Visualize Solution"))
         self.menuButton_4.setText(_translate("MainWindow", "Edit Solution"))
         self.trafficStatusLabel.setText(_translate("MainWindow", "Stable"))
+        self.exitButton.setText(_translate("MainWindow", "Exit"))
 

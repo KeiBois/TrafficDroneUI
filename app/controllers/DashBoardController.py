@@ -25,7 +25,7 @@ class DashBoardController():
     	self.mainWindow.show()
     	
     def openDroneScheduler(self):
-        webbrowser.open('http://live.flytbase.com/')  # Go to example.com
+        webbrowser.open('https://my.flytbase.com/')  # Go to example.com
 
     def openAnalyzeTraffic(self):
         self.mainWindow.close()
@@ -35,4 +35,5 @@ class DashBoardController():
         sys.exit()
 
     def openTrafficAlerts(self):
-        pass
+        self.mainWindow.close()
+        self.viewManager.openView("trafficAlertsController")

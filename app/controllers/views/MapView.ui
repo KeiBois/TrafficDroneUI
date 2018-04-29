@@ -44,6 +44,15 @@ border-width: 2px;
       <height>81</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Roboto Light</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+    </property>
     <property name="text">
      <string>Back to Dashboard</string>
     </property>
@@ -322,6 +331,29 @@ p, li { white-space: pre-wrap; }
       <string>Stable</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>2120</x>
+      <y>1610</y>
+      <width>321</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto Light</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#e57373 ;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

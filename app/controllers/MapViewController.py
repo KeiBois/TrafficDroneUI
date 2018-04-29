@@ -24,6 +24,8 @@ class MapViewController():
 	def addEvents(self):
 		self.window.menuButton.clicked.connect(lambda: self.openDashboard())
 		self.window.districtComboBox.activated.connect(lambda: self.comboBoxChanged())
+		self.window.exitButton.clicked.connect(lambda: self.exit())
+
 
 	def comboBoxChanged(self):
 		currentLocation = self.window.districtComboBox.currentText()
@@ -36,3 +38,6 @@ class MapViewController():
 	def openDashboard(self):
 		self.mainWindow.close()
 		self.viewManager.openView("dashBoardController")
+
+	def exit(self):
+		sys.exit()

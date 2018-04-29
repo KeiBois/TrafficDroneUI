@@ -1,6 +1,6 @@
 PYUIC5=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/Scripts/pyuic5.exe
 PYTHON=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/python.exe
-UIFILES=window1 MapView Dashboard
+UIFILES=window1 MapView Dashboard TrafficAlerts
 DIR=app/controllers/views/
 
 all: $(UIFILES)
@@ -12,5 +12,5 @@ clean:
 	rm $(DIR)*.py
 	touch $(DIR)__init__.py
 
-run:
+run: all
 	$(PYTHON) app/main.py
