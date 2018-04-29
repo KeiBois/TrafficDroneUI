@@ -103,6 +103,10 @@ p, li { white-space: pre-wrap; }
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+     </property>
      <property name="text">
       <string>Drone Flight Scheduler</string>
      </property>
@@ -149,6 +153,10 @@ p, li { white-space: pre-wrap; }
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+     </property>
      <property name="text">
       <string>Analyze Traffic</string>
      </property>
@@ -189,6 +197,10 @@ p, li { white-space: pre-wrap; }
        <family>Roboto Light</family>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#8c9eff ;
+color: white;</string>
      </property>
      <property name="text">
       <string>Traffic Alerts</string>

@@ -44,6 +44,15 @@ border-width: 2px;
       <height>81</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Roboto Light</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#8c9eff ;
+color: white;</string>
+    </property>
     <property name="text">
      <string>Back to Dashboard</string>
     </property>

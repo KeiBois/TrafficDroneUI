@@ -43,6 +43,8 @@ class Ui_MainWindow(object):
         font.setFamily("Roboto Light")
         font.setPointSize(12)
         self.droneSchedulerButton.setFont(font)
+        self.droneSchedulerButton.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.droneSchedulerButton.setObjectName("droneSchedulerButton")
         self.description_label_2 = QtWidgets.QLabel(self.frame)
         self.description_label_2.setGeometry(QtCore.QRect(600, 120, 1481, 141))
@@ -58,6 +60,8 @@ class Ui_MainWindow(object):
         font.setFamily("Roboto Light")
         font.setPointSize(12)
         self.analyzeTrafficButton.setFont(font)
+        self.analyzeTrafficButton.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.analyzeTrafficButton.setObjectName("analyzeTrafficButton")
         self.description_label_4 = QtWidgets.QLabel(self.frame)
         self.description_label_4.setGeometry(QtCore.QRect(590, 450, 1481, 141))
@@ -73,6 +77,8 @@ class Ui_MainWindow(object):
         font.setFamily("Roboto Light")
         font.setPointSize(12)
         self.trafficAlertsButton.setFont(font)
+        self.trafficAlertsButton.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.trafficAlertsButton.setObjectName("trafficAlertsButton")
         self.description_label_5 = QtWidgets.QLabel(self.frame)
         self.description_label_5.setGeometry(QtCore.QRect(600, 300, 1481, 141))

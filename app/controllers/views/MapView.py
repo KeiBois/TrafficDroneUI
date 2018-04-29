@@ -24,6 +24,11 @@ class Ui_MainWindow(object):
         self.mapLabel.setObjectName("mapLabel")
         self.menuButton = QtWidgets.QPushButton(self.centralwidget)
         self.menuButton.setGeometry(QtCore.QRect(60, 40, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.menuButton.setFont(font)
+        self.menuButton.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.menuButton.setObjectName("menuButton")
         self.districtComboBox = QtWidgets.QComboBox(self.centralwidget)
         self.districtComboBox.setGeometry(QtCore.QRect(340, 360, 601, 61))
