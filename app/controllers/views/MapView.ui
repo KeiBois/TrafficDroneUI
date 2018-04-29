@@ -178,31 +178,12 @@ p, li { white-space: pre-wrap; }
       <string>Traffic Status: </string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>390</y>
-       <width>781</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Roboto Light</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Traffic Light 1: Go</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>50</x>
        <y>150</y>
-       <width>781</width>
+       <width>111</width>
        <height>71</height>
       </rect>
      </property>
@@ -213,7 +194,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Traffic Light 1: Stop</string>
+      <string>Traffic Light 1:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -221,7 +202,7 @@ p, li { white-space: pre-wrap; }
       <rect>
        <x>50</x>
        <y>230</y>
-       <width>781</width>
+       <width>101</width>
        <height>71</height>
       </rect>
      </property>
@@ -232,26 +213,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Traffic Light 1: Stop</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>310</y>
-       <width>781</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Roboto Light</family>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Traffic Light 1: Go</string>
+      <string>Traffic Light 2:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -331,6 +293,38 @@ p, li { white-space: pre-wrap; }
       <string>Stable</string>
      </property>
     </widget>
+    <widget class="QLabel" name="light1">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>71</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="light2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>240</y>
+       <width>71</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="exitButton">
     <property name="geometry">
@@ -362,7 +356,7 @@ color: white;</string>
      <x>0</x>
      <y>0</y>
      <width>2500</width>
-     <height>43</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

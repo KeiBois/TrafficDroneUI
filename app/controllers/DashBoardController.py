@@ -2,7 +2,7 @@ import sys
 import webbrowser
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from controllers.views.Dashboard import Ui_MainWindow as Dashboard
+from controllers.views.DashBoard import Ui_MainWindow as Dashboard
 
  
 class DashBoardController():
