@@ -1,4 +1,3 @@
-
 from keras.models import Model, Sequential
 import helper as aux
 import glob
@@ -100,8 +99,9 @@ def getData():
     dataFile = 'data.p'
 
     if not os.path.isfile(dataFile):
-        tryGenerateNew = aux.promptForInputCategorical(message='data file not found. Attempt to generate?',
-                                                       options=['y', 'n']) == 'y'
+        # tryGenerateNew = aux.promptForInputCategorical(message='data file not found. Attempt to generate?',
+        #                                               options=['y', 'n']) == 'y'
+        tryGenerateNew = True
 
         if tryGenerateNew:
             vehicleFolder = 'samples/vehicles/'
@@ -158,9 +158,12 @@ def main():
     # useFlips = True
     # epochCount = 3
 
-    batchSize = aux.promptForInt(message='Please specify the batch size (32, 64, etc.): ')
-    useFlips = aux.promptForInputCategorical('Use flips?', options=['y', 'n']) == 'y'
-    epochCount = aux.promptForInt(message='Please specify the number of epochs: ')
+    # batchSize = aux.promptForInt(message='Please specify the batch size (32, 64, etc.): ')
+    # useFlips = aux.promptForInputCategorical('Use flips?', options=['y', 'n']) == 'y'
+    # epochCount = aux.promptForInt(message='Please specify the number of epochs: ')
+    batchSize = 64
+    useFlips = False
+    epochCount = 50
 
     inflateFactor = 2 if useFlips else 1
 
@@ -171,20 +174,19 @@ def main():
     validationSteps = len(validationSamples) * inflateFactor / batchSize
     print('validation steps per epoch: {}'.format(validationSteps))
 
-    proceed = aux.promptForInputCategorical('Proceed?', ['y', 'n']) == 'y'
+    proceed = True # aux.promptForInputCategorical('Proceed?', ['y', 'n']) == 'y'
 
     if proceed:
 
         sourceModel, modelName = poolerPico()
 
-        # Adding fully-connected layer to train the 'classifier'
         x = sourceModel.output
         x = Flatten()(x)
         model = Model(inputs=sourceModel.input, outputs=x)
 
         print(model.summary())
 
-        confirm = aux.promptForInputCategorical('Confirm?', ['y', 'n']) == 'y'
+        confirm = True # aux.promptForInputCategorical('Confirm?', ['y', 'n']) == 'y'
 
         if not confirm:
             return
