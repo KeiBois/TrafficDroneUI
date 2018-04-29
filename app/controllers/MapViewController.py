@@ -12,10 +12,10 @@ class MapViewController():
         self.mainWindow = QMainWindow()
         self.viewManager = viewManager
         self.window.setupUi(self.mainWindow)
-        self.window.mapLabel.setPixmap(QtGui.QPixmap("controllers/views/north_boulder.png"))
+        self.window.mapLabel.setPixmap(QtGui.QPixmap("app/controllers/views/north_boulder.png"))
         self.status = 0
-        self.window.light1.setPixmap(QtGui.QPixmap("controllers/views/red.png"))
-        self.window.light2.setPixmap(QtGui.QPixmap("controllers/views/green.png"))
+        self.window.light1.setPixmap(QtGui.QPixmap("app/controllers/views/red.png"))
+        self.window.light2.setPixmap(QtGui.QPixmap("app/controllers/views/green.png"))
         self.window.trafficStatusLabel.setStyleSheet("color: green;")
         self.mapImages = dict()
         self.mapImages["North Boulder"] = "north_boulder.png"
@@ -38,7 +38,7 @@ class MapViewController():
     def comboBoxChanged(self):
         currentLocation = self.window.districtComboBox.currentText()
         imageName = self.mapImages[currentLocation]
-        self.window.mapLabel.setPixmap(QtGui.QPixmap("controllers/views/" + imageName))
+        self.window.mapLabel.setPixmap(QtGui.QPixmap("app/controllers/views/" + imageName))
 
     def showView(self):
         self.mainWindow.show()
@@ -61,10 +61,10 @@ class MapViewController():
             self.window.trafficStatusLabel.setText("Jam")
             self.window.trafficStatusLabel.setStyleSheet("color: red")
         if self.status % 2 == 0:
-            self.window.light1.setPixmap(QtGui.QPixmap("controllers/views/red.png"))
-            self.window.light2.setPixmap(QtGui.QPixmap("controllers/views/green.png"))
+            self.window.light1.setPixmap(QtGui.QPixmap("app/controllers/views/red.png"))
+            self.window.light2.setPixmap(QtGui.QPixmap("app/controllers/views/green.png"))
         else:
-            self.window.light2.setPixmap(QtGui.QPixmap("controllers/views/red.png"))
-            self.window.light1.setPixmap(QtGui.QPixmap("controllers/views/green.png"))
+            self.window.light2.setPixmap(QtGui.QPixmap("app/controllers/views/red.png"))
+            self.window.light1.setPixmap(QtGui.QPixmap("app/controllers/views/green.png"))
     def exit(self):
         sys.exit()

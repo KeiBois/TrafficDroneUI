@@ -1,5 +1,5 @@
-PYUIC5=/usr/bin/pyuic5
-PYTHON=/home/ulimartinez/trafficdroneui/bin/python3.6
+PYUIC5=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/Scripts/pyuic5.exe
+PYTHON=/mnt/c/Users/erick/AppData/Local/Programs/Python/Python36/python.exe
 UIFILES=window1 MapView DashBoard TrafficAlerts
 DIR=app/controllers/views/
 

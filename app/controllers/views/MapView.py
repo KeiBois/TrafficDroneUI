@@ -95,12 +95,29 @@ class Ui_MainWindow(object):
         self.label_8.setObjectName("label_8")
         self.menuButton_2 = QtWidgets.QPushButton(self.groupBox)
         self.menuButton_2.setGeometry(QtCore.QRect(630, 730, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.menuButton_2.setFont(font)
+        self.menuButton_2.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;\n"
+"\n"
+"")
         self.menuButton_2.setObjectName("menuButton_2")
         self.menuButton_3 = QtWidgets.QPushButton(self.groupBox)
         self.menuButton_3.setGeometry(QtCore.QRect(330, 730, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.menuButton_3.setFont(font)
+        self.menuButton_3.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.menuButton_3.setObjectName("menuButton_3")
         self.menuButton_4 = QtWidgets.QPushButton(self.groupBox)
         self.menuButton_4.setGeometry(QtCore.QRect(30, 730, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Roboto Light")
+        self.menuButton_4.setFont(font)
+        self.menuButton_4.setStyleSheet("background-color:#8c9eff ;\n"
+"color: white;")
         self.menuButton_4.setObjectName("menuButton_4")
         self.trafficStatusLabel = QtWidgets.QLabel(self.groupBox)
         self.trafficStatusLabel.setGeometry(QtCore.QRect(290, 50, 781, 71))
@@ -130,7 +147,7 @@ class Ui_MainWindow(object):
         self.exitButton.setObjectName("exitButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 2500, 18))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 2500, 43))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -145,7 +162,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.menuButton.setText(_translate("MainWindow", "Back to Dashboard"))
         self.label.setText(_translate("MainWindow", "City District: "))
-        self.label_2.setText(_translate("MainWindow", "Analyze Traffic"))
+        self.label_2.setText(_translate("MainWindow", "Traffic Status"))
         self.description_label.setText(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

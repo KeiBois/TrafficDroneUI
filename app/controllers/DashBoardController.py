@@ -12,7 +12,7 @@ class DashBoardController():
         self.mainWindow = QMainWindow()
         self.viewManager = viewManager
         self.window.setupUi(self.mainWindow)
-        self.window.logoLabel.setPixmap(QtGui.QPixmap("controllers/views/drone_logo.jpg"))
+        self.window.logoLabel.setPixmap(QtGui.QPixmap("app/controllers/views/drone_logo.jpg"))
         self.addEvents()
 
     def addEvents(self):

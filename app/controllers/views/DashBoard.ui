@@ -158,7 +158,7 @@ p, li { white-space: pre-wrap; }
 color: white;</string>
      </property>
      <property name="text">
-      <string>Analyze Traffic</string>
+      <string>Traffic Status</string>
      </property>
     </widget>
     <widget class="QLabel" name="description_label_4">
