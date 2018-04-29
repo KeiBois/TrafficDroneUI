@@ -1,4 +1,4 @@
-
+from keras.layers import Conv2D, Flatten, Lambda, MaxPooling2D, Dropout
 from keras.models import Model, Sequential
 import helper as aux
 import glob
