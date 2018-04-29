@@ -194,7 +194,7 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Traffic Light 1:</string>
+      <string>Light 1:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -301,6 +301,7 @@ color: white;</string>
      </property>
      <property name="text">
       <string>Edit Solution</string>
+
      </property>
     </widget>
     <widget class="QLabel" name="trafficStatusLabel">

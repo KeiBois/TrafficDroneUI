@@ -24,7 +24,8 @@ class MapViewController():
         self.mapImages["Table Mesa"] = "north_boulder.png"
         self.window.districtComboBox.addItems(["North Boulder", "Central Boulder", "University Hill", "Table Mesa"])
         self.timer = QTimer()
-        self.timer.start(1000)
+        self.time = 2000
+        self.timer.start(self.time)
         self.addEvents()
 
     def addEvents(self):
@@ -51,13 +52,13 @@ class MapViewController():
         self.status += 1
         if self.status > 16:
             self.timer.stop()
-            self.timer.start(1000)
+            self.timer.start(self.time)
             self.status = 0
             self.window.trafficStatusLabel.setText("Stable")
             self.window.trafficStatusLabel.setStyleSheet("color: green")
         elif self.status > 10:
             self.timer.stop()
-            self.timer.start(2000)
+            self.timer.start(2*self.time)
             self.window.trafficStatusLabel.setText("Jam")
             self.window.trafficStatusLabel.setStyleSheet("color: red")
         if self.status % 2 == 0:

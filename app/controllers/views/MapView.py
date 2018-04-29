@@ -171,7 +171,7 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> <br /></p></body></html>"))
         self.groupBox.setTitle(_translate("MainWindow", "Traffic Status"))
         self.label_3.setText(_translate("MainWindow", "Traffic Status: "))
-        self.label_4.setText(_translate("MainWindow", "Traffic Light 1:"))
+        self.label_4.setText(_translate("MainWindow", "Light 1:"))
         self.label_5.setText(_translate("MainWindow", "Traffic Light 2:"))
         self.label_8.setText(_translate("MainWindow", "Proposed Solution: "))
         self.menuButton_2.setText(_translate("MainWindow", "Make Changes"))
